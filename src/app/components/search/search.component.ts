@@ -41,7 +41,7 @@ export class Search {
       this.approvedCity.emit(newCity);
     }
   }
-
+  
   validCity(newCity) {
     let validCity:boolean
     let allCities:any = cities;

@@ -1,0 +1,16 @@
+<div class="cardboard">
+    <div id='top'>
+   <h1 id='city'> {{card.cityName}}</h1>
+    <button id='show-less' (click)="handleShowLess()">show less</button>
+</div>
+<div class="cardboard-container">
+    <div class="weather-card" *ngFor="let card of card.cardBoard">
+    <img [src]="card.icon" alt="weather img" />
+    <p id="weatherName">{{card.weatherName}}</p>
+    <p id="weatherDate">{{card.weatherDate | date:"dd / MM"}}</p>
+    <p id="temp">{{card.temp | number: '1.0-0'}}°C</p>
+    <p>{{card.minTemp | number: '1.0-0'}}°C - {{card.maxTemp | number: '1.0-0'}}°C</p>
+    <p id = "feelsLike">Feels like {{card.feelsLike | number: '1.0-0'}}</p>
+</div>
+    </div>
+</div>

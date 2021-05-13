@@ -1,0 +1,10 @@
+
+<button id='remove' (click)='handleRemove()'>X</button>
+<button id='show-more' (click)='handleShowMore()'>show more</button>
+<h1 id='city'>{{card.cityName}}</h1>
+<img [src]="card.icon" alt="weather img" />
+<p id="weatherName">{{card.weatherName}}</p>
+<p id="temp">{{card.temp | number: '1.0-0'}}°C</p>
+<p>{{card.minTemp | number: '1.0-0'}}°C - {{card.maxTemp | number: '1.0-0'}}°C</p>
+<p id = "feelsLike">Feels like {{card.feelsLike | number: '1.0-0'}}</p>
+ 
